@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShakeWatch MX — Alerta sísmica temprana para México</title>
+<meta name="description" content="Alerta sísmica temprana calculada para tu ubicación exacta: cuenta regresiva al impacto, intensidad estimada y check-in familiar. Red sísmica propia e inteligencia artificial.">
+<meta name="theme-color" content="#1661F6">
+
+<link rel="icon" href="Assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="Assets/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="Assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ShakeWatch MX — Los temblores no avisan. Tú sí vas a saberlo.">
+<meta property="og:description" content="Cuenta regresiva al impacto, intensidad estimada y el estado de tu familia. Alerta sísmica temprana para México.">
+<meta property="og:image" content="Assets/mapa-mexico.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className+=" js";</script>
+</head>
+<body>
+
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<!-- ══════════ BANNER ══════════ -->
+<div class="topbar">
+  <div class="topbar__inner">
+    <p class="topbar__text"><strong>Alerta sísmica temprana para México</strong><span class="topbar__dot" aria-hidden="true"></span><span class="topbar__sub">Tecnología nacida en la Universidad de Tel Aviv</span></p>
+    <a class="topbar__pill" href="#descargar">Descargar</a>
+  </div>
+</div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#inicio" aria-label="ShakeWatch, inicio">
+      <img src="Assets/logo.svg" alt="ShakeWatch" width="150" height="29">
+    </a>
+
+    <nav class="nav__menu" id="nav-menu" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#precio">Precio</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a class="btn btn--primary nav__menu-cta" href="#contacto">Contáctanos</a>
+    </nav>
+
+    <a class="btn btn--primary nav__cta" href="#contacto">Contáctanos</a>
+
+    <button class="nav__burger" id="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="wrap">
+    <h1 class="hero__title">Los temblores no avisan.</h1>
+
+    <div class="hero__stage">
+      <div class="hero__card">
+        <img class="hero__map" src="Assets/mapa-mexico.jpg" alt="Mapa de México con la red de monitoreo sísmico" loading="eager">
+        <div class="radar" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+        <div class="badge-icon hero__badge">
+          <img src="Assets/marca-blanca.svg" alt="" width="40" height="40">
+        </div>
+
+        <div class="glass hero__glass">
+          <p>Tú sí vas a saberlo. Con la certeza de que los tuyos están a salvo.</p>
+        </div>
+
+        <span class="mag mag--r" aria-hidden="true">R</span>
+        <span class="mag mag--s" aria-hidden="true">S</span>
+        <span class="mag mag--m" aria-hidden="true">M</span>
+      </div>
+
+      <img class="hero__phone" src="Assets/iphone-hero.png" alt="App ShakeWatch mostrando una alerta sísmica en el celular" width="900" height="675">
+    </div>
+
+    <div class="hero__foot">
+      <p class="hero__lead">Modelos de IA desarrollados tras más de 10 años de investigación en la Universidad de Tel Aviv. Si el peligro va a llegar a donde estás, tu celular te avisa con cuenta regresiva e intensidad estimada y en un toque, cada miembro de tu familia confirma que está bien.</p>
+      <div class="stores" id="descargar">
+        <a class="store" href="#" aria-label="Descargar en App Store">
+          <img class="store__ico" src="Assets/apple-blanco.svg" alt="" aria-hidden="true">
+          <span><small>Descárgalo en</small><b>App Store</b></span>
+        </a>
+        <a class="store" href="#" aria-label="Descargar en Google Play">
+          <img class="store__ico" src="Assets/google-play.svg" alt="" aria-hidden="true">
+          <span><small>Descárgalo en</small><b>Google Play</b></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FEATURES ══════════ -->
+<section class="features" id="que-hace">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="sec-head__eyebrow">Cuando la emergencia ya llegó, ya es demasiado tarde.</p>
+      <h2 class="sec-head__title">ShakeWatch trabaja antes.</h2>
+      <p class="sec-head__sub">Una alarma cualquiera te dice que algo pasa. ShakeWatch te dice qué viene, cuándo llega, qué tan fuerte — y cómo están tus seres queridos.</p>
+      <a class="btn btn--primary btn--lg" href="#descargar">Descargar ShakeWatch</a>
+    </header>
+
+    <!-- 01 · Cuenta regresiva -->
+    <article class="feat reveal">
+      <div class="feat__media">
+        <img class="feat__bg" src="Assets/mapa-satelital.jpg" alt="Vista satelital del Pacífico mexicano" loading="lazy">
+        <div class="radar radar--sm" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="glass glass--dark countdown">
+          <p class="countdown__label">Tiempo para impactar en Hogar</p>
+          <p class="countdown__time"><b>0:00:10</b> <span>Seg.</span></p>
+          <p class="countdown__meta">Temblor esperado: <span>Leve</span></p>
+        </div>
+      </div>
+      <div class="feat__text">
+        <h3>Cuenta regresiva al impacto</h3>
+        <p class="feat__kicker">Sabes cuántos segundos tienes.</p>
+        <p>No solo "está temblando": un contador te dice cuánto falta para que la sacudida llegue a tu ubicación, para que uses cada segundo en ponerte a salvo.</p>
+      </div>
+    </article>
+
+    <!-- 02 · Intensidad -->
+    <article class="feat feat--flip reveal">
+      <div class="feat__media feat__media--dark">
+        <img class="feat__bg" src="Assets/mapa-satelital.jpg" alt="Mapa satelital con el epicentro estimado" loading="lazy">
+        <div class="feat__scrim"></div>
+        <div class="intensity">
+          <div class="intensity__row">
+            <span class="intensity__mag">1.0</span>
+            <div>
+              <p class="intensity__dist">272.1 km de Hogar</p>
+              <p class="intensity__desc"><span>Leve</span> Sacudida esperada</p>
+            </div>
+          </div>
+          <div class="scale"><i style="left:15%"></i></div>
+        </div>
+      </div>
+      <div class="feat__text">
+        <h3>Intensidad estimada</h3>
+        <p class="feat__kicker">Sabes qué tan fuerte se va a sentir.</p>
+        <p>La app estima la intensidad del movimiento en tu zona antes de que llegue. No es lo mismo prepararse para un balanceo leve que para una sacudida fuerte.</p>
+      </div>
+    </article>
+
+    <!-- 03 · Alerta solo si la vas a sentir -->
+    <article class="feat reveal">
+      <div class="feat__media">
+        <img class="feat__bg" src="Assets/mapa-satelital.jpg" alt="Mapa con los sismos recientes de la zona" loading="lazy">
+        <img class="feat__inset" src="Assets/app-mapa-lista.png" alt="Pantalla de la app con la lista de sismos recientes" loading="lazy">
+        <span class="pin" style="left:32%;top:41%"></span>
+        <span class="pin" style="left:16%;top:43%"></span>
+        <span class="pin" style="left:31%;top:55%"></span>
+        <span class="pin" style="left:26%;top:72%"></span>
+      </div>
+      <div class="feat__text">
+        <h3>Alerta solo si la vas a sentir</h3>
+        <p class="feat__kicker">Cero alarmas por sismos que ni notarías.</p>
+        <p>Calculamos el impacto para tu ubicación exacta. Si el sismo no se va a sentir donde estás, no te despertamos a las 3 a.m. — y después te notificamos que ocurrió, para que sepas que el sistema siempre estuvo vigilando.</p>
+      </div>
+    </article>
+
+    <!-- 04 · Check-in familiar -->
+    <article class="feat feat--flip reveal">
+      <div class="feat__media feat__media--green">
+        <img class="feat__bg" src="Assets/mapa-satelital.jpg" alt="Mapa con el estado de cada familiar" loading="lazy">
+        <div class="feat__scrim feat__scrim--green"></div>
+        <img class="checkin__avatar checkin__avatar--1" src="Assets/avatar-1.jpg" alt="" loading="lazy">
+        <img class="checkin__avatar checkin__avatar--2" src="Assets/avatar-2.jpg" alt="" loading="lazy">
+        <img class="checkin__avatar checkin__avatar--3" src="Assets/avatar-3.jpg" alt="" loading="lazy">
+        <img class="checkin__avatar checkin__avatar--4" src="Assets/avatar-4.jpg" alt="" loading="lazy">
+        <div class="checkin">
+          <span class="checkin__btn checkin__btn--danger">ESTOY EN PELIGRO</span>
+          <span class="checkin__btn checkin__btn--safe">ESTOY A SALVO</span>
+        </div>
+      </div>
+      <div class="feat__text">
+        <h3>Check-in familiar "Estoy a salvo"</h3>
+        <p class="feat__kicker">Lo primero que quieres saber cuando tiembla: ¿están bien?</p>
+        <p>Tras un sismo, cada miembro de tu círculo avisa con un toque si está a salvo o necesita ayuda. Solo en emergencia se comparte su ubicación exacta — solo con tu familia, y no se guarda.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════ PROMESA / PRIVACIDAD ══════════ -->
+<section class="promise">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="sec-head__eyebrow">No estás comprando una app.</p>
+      <h2 class="sec-head__title">Estás comprando la certeza de que, pase lo que pase, tu familia estará a salvo</h2>
+      <p class="sec-head__sub">Cuando la emergencia ya llegó, ya es demasiado tarde para prepararse.<br>Tu plan protege hasta a 5 personas: tú y 4 familiares. Cada uno recibe la alerta calculada para <em>su</em> ubicación, tu hija en la universidad, tus papás en otra colonia, tú en la oficina.</p>
+    </header>
+
+    <div class="cards reveal">
+      <article class="card">
+        <span class="card__ico card__ico--light">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0C0C0D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5.5c0 4.3-2.9 8.2-7 9.5-4.1-1.3-7-5.2-7-9.5V6l7-3z"/><path d="M9.5 12.2l1.8 1.8 3.4-3.6"/></svg>
+        </span>
+        <h3>Privacidad primero.</h3>
+        <p>En operación normal la app solo usa ubicación aproximada (~5 km) para saber si alertarte. No es una app de rastreo: no guardamos historial de ubicaciones ni las compartimos con nadie.</p>
+      </article>
+      <article class="card">
+        <span class="card__ico">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        </span>
+        <h3>Ubicación exacta solo cuando importa.</h3>
+        <p>Únicamente durante una emergencia, y únicamente visible para tu familia.</p>
+      </article>
+      <article class="card">
+        <span class="card__ico">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.2 2"/></svg>
+        </span>
+        <h3>24/7, sin que hagas nada.</h3>
+        <p>La red sísmica y los modelos de IA vigilan siempre; tú solo mantén la app instalada y las notificaciones activas.</p>
+      </article>
+    </div>
+
+    <div class="center reveal"><a class="btn btn--primary btn--lg" href="#descargar">Proteger a mi familia — Descargar</a></div>
+  </div>
+</section>
+
+<!-- ══════════ COBERTURA ══════════ -->
+<section class="coverage" id="cobertura">
+  <div class="wrap coverage__grid">
+    <div class="coverage__map reveal">
+      <img src="Assets/mapa-mexico.jpg" alt="Mapa de cobertura de ShakeWatch en México" loading="lazy">
+      <span class="dot" style="left:47%;top:65%"></span>
+      <span class="dot" style="left:46%;top:73%"></span>
+      <span class="dot" style="left:54%;top:71%"></span>
+      <span class="dot" style="left:61%;top:78%"></span>
+      <span class="dot" style="left:71%;top:84%"></span>
+      <span class="dot" style="left:84%;top:83%"></span>
+      <span class="dot" style="left:65%;top:68%"></span>
+      <span class="dot" style="left:68%;top:76%"></span>
+      <span class="dot" style="left:5%;top:4%"></span>
+      <div class="coverage__badge">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#1661F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        <span><b>Cobertura activa</b><i>11 estados y CDMX</i></span>
+      </div>
+    </div>
+
+    <div class="coverage__panel reveal">
+      <div class="coverage__head">
+        <span class="badge-icon badge-icon--md"><img src="Assets/marca-blanca.svg" alt="" width="34" height="34"></span>
+        <div>
+          <h2>¿ShakeWatch te cubre?</h2>
+          <p class="coverage__kicker">Revísalo en 5 segundos.</p>
+        </div>
+      </div>
+
+      <label class="coverage__label" for="estado">Selecciona tu estado y descubre si la app ya está disponible en tu zona.</label>
+      <div class="select">
+        <select id="estado" name="estado">
+          <option value="" selected>Selecciona una opción</option>
+          <option value="1">Baja California* [POR CONFIRMAR]</option>
+          <option value="1">Jalisco</option>
+          <option value="1">Colima</option>
+          <option value="1">Michoacán</option>
+          <option value="1">Guerrero</option>
+          <option value="1">Oaxaca</option>
+          <option value="1">Chiapas</option>
+          <option value="1">Puebla</option>
+          <option value="1">Morelos</option>
+          <option value="1">Estado de México</option>
+          <option value="1">CDMX</option>
+          <option value="0">Otro estado</option>
+        </select>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#656565" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9.5l6 6 6-6"/></svg>
+      </div>
+
+      <div class="coverage__result" id="coverage-yes" hidden>
+        <p>✅ Sí, tu zona está cubierta. Descarga la app y activa tus alertas hoy.</p>
+        <a class="btn btn--primary" href="#descargar">Descargar ShakeWatch</a>
+      </div>
+
+      <div class="coverage__result" id="coverage-no" hidden>
+        <p>Aún no llegamos a tu estado. Déjanos tu correo y te avisamos en cuanto la red esté activa ahí.</p>
+        <form class="coverage__form" action="gracias.html" method="get" data-origen="cobertura">
+          <input type="email" name="email" placeholder="ejemplo@correo.com" required aria-label="Tu correo electrónico">
+          <button class="btn btn--primary" type="submit">Avísenme</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CÓMO FUNCIONA ══════════ -->
+<section class="steps" id="como-funciona">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="sec-head__eyebrow">De la primera onda sísmica</p>
+      <h2 class="sec-head__title">a tu pantalla, en 3 pasos.</h2>
+    </header>
+
+    <article class="step reveal">
+      <div class="step__media">
+        <div class="radar radar--xs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <img src="Assets/paso-1.png" alt="Celular mostrando la detección de un sismo" loading="lazy">
+      </div>
+      <div class="step__text">
+        <p class="step__n">Paso 1</p>
+        <h3>Detectamos</h3>
+        <p>Nuestra red propia de estaciones sísmicas monitorean el Pacífico mexicano las 24 horas y detecta el sismo desde sus primeras ondas.</p>
+      </div>
+    </article>
+
+    <article class="step reveal">
+      <div class="step__media">
+        <div class="scale scale--float" aria-hidden="true"><i style="left:22%"></i></div>
+        <img src="Assets/paso-2.png" alt="Celular calculando magnitud e intensidad" loading="lazy">
+      </div>
+      <div class="step__text">
+        <p class="step__n">Paso 2</p>
+        <h3>Calculamos para ti</h3>
+        <p>En la nube, modelos de IA construidos sobre más de una década de investigación en sismología de arreglos en la Universidad de Tel Aviv determinan magnitud, epicentro y — lo que importa — cómo se sentirá exactamente en tu ubicación.</p>
+      </div>
+    </article>
+
+    <article class="step reveal">
+      <div class="step__media">
+        <img class="step__avatar step__avatar--a" src="Assets/avatar-5.jpg" alt="" loading="lazy">
+        <img class="step__avatar step__avatar--b" src="Assets/avatar-6.jpg" alt="" loading="lazy">
+        <span class="step__bell">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8.5a6 6 0 10-12 0c0 6-2 7.5-2 7.5h16s-2-1.5-2-7.5z"/><path d="M13.7 19.5a2 2 0 01-3.4 0"/></svg>
+        </span>
+        <img src="Assets/paso-3.png" alt="Celular recibiendo la alerta antes de la sacudida" loading="lazy">
+      </div>
+      <div class="step__text">
+        <p class="step__n">Paso 3</p>
+        <h3>Te alertamos a tiempo</h3>
+        <p>Si lo vas a sentir, tu celular suena antes de que llegue la sacudida: cuántos segundos tienes y qué tan fuerte será. Tú te pones a salvo; tu familia confirma que está bien.</p>
+        <a class="btn btn--primary" href="#descargar">Descargar la app</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════ COMPARATIVA ══════════ -->
+<section class="compare">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="sec-head__eyebrow">Ya existe la alerta gratuita del gobierno.</p>
+      <h2 class="sec-head__title">¿Por qué ShakeWatch?</h2>
+    </header>
+
+    <div class="table reveal">
+      <div class="table__head">
+        <span></span>
+        <span>ShakeWatch MX</span>
+        <span>Alerta gubernamental (altavoces / alerta masiva)</span>
+        <span>Otras apps de alerta</span>
+      </div>
+
+      <div class="table__row">
+        <span class="table__feat">Cobertura en Baja California</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b></span>
+        <span data-th="Alerta gubernamental"><b class="no"></b></span>
+        <span data-th="Otras apps"><b class="no"></b> Limitada a la red gubernamental</span>
+      </div>
+      <div class="table__row">
+        <span class="table__feat">Alerta calculada para tu ubicación exacta</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b></span>
+        <span data-th="Alerta gubernamental"><b class="no"></b> Difusión general por zona</span>
+        <span data-th="Otras apps"><b class="no"></b> Difusión general</span>
+      </div>
+      <div class="table__row">
+        <span class="table__feat">Cuenta regresiva al impacto</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b></span>
+        <span data-th="Alerta gubernamental"><b class="no"></b></span>
+        <span data-th="Otras apps"><b class="no"></b></span>
+      </div>
+      <div class="table__row">
+        <span class="table__feat">Intensidad estimada de la sacudida</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b></span>
+        <span data-th="Alerta gubernamental"><b class="no"></b></span>
+        <span data-th="Otras apps"><b class="no"></b></span>
+      </div>
+      <div class="table__row">
+        <span class="table__feat">Filtra sismos que no vas a sentir</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b></span>
+        <span data-th="Alerta gubernamental"><b class="no"></b> (suena aunque no lo sientas)</span>
+        <span data-th="Otras apps"><b class="no"></b></span>
+      </div>
+      <div class="table__row">
+        <span class="table__feat">Check-in familiar "estoy a salvo"</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b> Incluido (hasta 4 familiares)</span>
+        <span data-th="Alerta gubernamental"><b class="no"></b></span>
+        <span data-th="Otras apps"><b class="no"></b></span>
+      </div>
+      <div class="table__row">
+        <span class="table__feat">Red sísmica propia</span>
+        <span data-th="ShakeWatch MX"><b class="ok"></b></span>
+        <span data-th="Alerta gubernamental">Red pública</span>
+        <span data-th="Otras apps"><b class="no"></b> Depende de la red pública</span>
+      </div>
+    </div>
+
+    <p class="compare__note reveal">La alerta pública te dice que algo pasa. ShakeWatch protege a tu familia: sus ubicaciones, sus segundos de anticipación, su "estoy a salvo". Porque cuando la emergencia ya llegó, prepararse ya no es opción.</p>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIOS ══════════ -->
+<section class="voices">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="sec-head__eyebrow">Lo que se siente dejar de preocuparte</p>
+      <h2 class="sec-head__title">"Por ya saber donde y cuando temblará"</h2>
+    </header>
+  </div>
+
+  <div class="voices__rail reveal">
+    <article class="quote">
+      <span class="quote__mark" aria-hidden="true">“</span>
+      <div class="quote__head">
+        <img src="Assets/avatar-testimonio.jpg" alt="" loading="lazy">
+        <div><b>Jane Doe</b><i>Guadalajara</i></div>
+        <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur. Et velit semper purus commodo aenean id nec porta velit. Dui eget tincidunt sagittis porta gravida at felis suscipit.</p>
+    </article>
+
+    <article class="voices__video">
+      <img src="Assets/testimonio-video.jpg" alt="Testimonio en video de una usuaria de ShakeWatch" loading="lazy">
+      <button class="voices__play" type="button" aria-label="Reproducir testimonio">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#0C0C0D" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
+      </button>
+    </article>
+
+    <article class="quote">
+      <span class="quote__mark" aria-hidden="true">“</span>
+      <div class="quote__head">
+        <img src="Assets/avatar-testimonio.jpg" alt="" loading="lazy">
+        <div><b>Jane Doe</b><i>Guadalajara</i></div>
+        <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur. Et velit semper purus commodo aenean id nec porta velit. Dui eget tincidunt sagittis porta gravida at felis suscipit.</p>
+    </article>
+
+    <article class="voices__video">
+      <img src="Assets/testimonio-video.jpg" alt="Testimonio en video de un usuario de ShakeWatch" loading="lazy">
+      <button class="voices__play" type="button" aria-label="Reproducir testimonio">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#0C0C0D" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
+      </button>
+    </article>
+  </div>
+</section>
+
+<!-- ══════════ PRECIO ══════════ -->
+<section class="pricing" id="precio">
+  <img class="pricing__bg" src="Assets/mapa-satelital.jpg" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap pricing__grid">
+    <div class="pricing__left reveal">
+      <h2>Proteger a toda tu familia cuesta menos de $1 MXN al día.</h2>
+      <p>Un seguro te compensa después. Esto actúa antes por una fracción de lo que pagas por cualquier póliza.</p>
+      <div class="stores stores--sm">
+        <a class="store" href="#" aria-label="Descargar en App Store">
+          <img class="store__ico" src="Assets/apple-blanco.svg" alt="" aria-hidden="true">
+          <span><small>Descárgalo en</small><b>App Store</b></span>
+        </a>
+        <a class="store" href="#" aria-label="Descargar en Google Play">
+          <img class="store__ico" src="Assets/google-play.svg" alt="" aria-hidden="true">
+          <span><small>Descárgalo en</small><b>Google Play</b></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="pricing__card reveal">
+      <ul>
+        <li>Alertas sísmicas personalizadas por ubicación, 24/7</li>
+        <li>Cuenta regresiva al impacto + intensidad estimada</li>
+        <li>Alerta solo si la sacudida te va a alcanzar</li>
+        <li>Hasta 4 familiares incluidos, cada uno con sus propias alertas</li>
+        <li>Check-in familiar "estoy a salvo / necesito ayuda"</li>
+        <li>Notificación post-evento de todos los sismos en tu zona</li>
+      </ul>
+      <hr>
+      <p class="pricing__fine">Suscripción anual gestionada por tu tienda de apps.<br>Cancela la renovación cuando quieras desde tu cuenta.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 class="faq__title reveal">Preguntas que nos hacen antes de descargar.</h2>
+
+    <div class="faq__list reveal">
+      <details class="faq__item" open>
+        <summary><span class="faq__n">01</span><span class="faq__q">¿En qué es diferente a la alerta sísmica del gobierno?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>La alerta pública se difunde por zonas amplias: puede sonar aunque el sismo no se sienta donde estás, y hay regiones — como Baja California — donde no llega. ShakeWatch calcula el impacto para tu ubicación exacta y solo te alerta si lo vas a sentir, con cuánto tiempo tienes y qué tan fuerte será.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">02</span><span class="faq__q">¿Y si suena la alerta pública pero ShakeWatch no?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>Es intencional. Significa que nuestro sistema estimó que en tu ubicación no sentirías el sismo. Después del evento recibirás una notificación confirmando que ocurrió y que fuiste evaluado — el sistema nunca dejó de vigilar.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">03</span><span class="faq__q">¿Me están rastreando todo el tiempo?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>No. En operación normal la app usa tu ubicación aproximada (unos 5 km) solo para decidir si alertarte, y no guardamos historial. Tu ubicación exacta se comparte únicamente durante una emergencia y únicamente con tu familia.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">04</span><span class="faq__q">¿Funciona en mi estado?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>Hoy cubrimos 10 estados del centro y Pacífico de México [lista en la sección de cobertura] y estamos llegando a Baja California [CONFIRMAR]. Si tu estado aún no está cubierto, déjanos tu correo y te avisamos cuando la red esté activa.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">05</span><span class="faq__q">¿Cuántas personas cubre mi suscripción?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>Tú más hasta 4 familiares. Cada uno recibe alertas calculadas para su propia ubicación y participa en el check-in familiar.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">06</span><span class="faq__q">¿Por qué es de paga si la alerta del gobierno es gratis?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>Porque operamos nuestra propia red de estaciones sísmicas y modelos de IA nacidos de más de 10 años de investigación en la Universidad de Tel Aviv, para darte lo que la difusión masiva no puede: precisión por ubicación, cuenta regresiva, intensidad estimada y el estado de tu familia. Piénsalo como piensas cualquier protección para los tuyos — solo que esta actúa antes de la emergencia, no después.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">07</span><span class="faq__q">¿Cómo pago y cómo cancelo?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>La suscripción se contrata y se gestiona directamente en App Store o Google Play. Puedes desactivar la renovación en cualquier momento desde la configuración de tu tienda.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary><span class="faq__n">08</span><span class="faq__q">¿ShakeWatch predice sismos?</span><i aria-hidden="true"></i></summary>
+        <div class="faq__a"><span class="faq__n" aria-hidden="true"></span><p>No — nadie puede predecir un sismo. Lo que hacemos es detectarlo en cuanto inicia y avisarte antes de que la sacudida llegue a ti. Esos segundos son la diferencia.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA FINAL ══════════ -->
+<section class="final" id="contacto">
+  <div class="wrap final__grid">
+    <div class="final__media reveal">
+      <img class="final__bg" src="Assets/familia-abrazo.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img class="final__cut" src="Assets/familia-abrazo-recorte.png" alt="Dos personas abrazándose después de un sismo" loading="lazy">
+      <div class="final__scrim"></div>
+      <span class="badge-icon final__badge"><img src="Assets/marca-blanca.svg" alt="" width="34" height="34"></span>
+      <div class="stores stores--onimg">
+        <a class="store store--dark" href="#" aria-label="Descargar en App Store">
+          <img class="store__ico" src="Assets/apple-blanco.svg" alt="" aria-hidden="true">
+          <span><small>Descárgalo en</small><b>App Store</b></span>
+        </a>
+        <a class="store store--dark" href="#" aria-label="Descargar en Google Play">
+          <img class="store__ico" src="Assets/google-play.svg" alt="" aria-hidden="true">
+          <span><small>Descárgalo en</small><b>Google Play</b></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="final__text reveal">
+      <p class="final__kicker">El próximo sismo no va a avisar.</p>
+      <h2>Tu familia merece que tú sí lo sepas.</h2>
+      <p class="final__body">Descarga la app, activa tus notificaciones y agrega a los tuyos. Tres minutos hoy y el día que tiemble, tendrás los minutos para reaccionar y la certeza de que están bien. Porque cuando la emergencia ya llegó, ya es demasiado tarde.</p>
+
+      <form class="final__form" action="gracias.html" method="get" data-origen="cta-final">
+        <div class="field">
+          <label for="nombre">Nombre completo*</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Por favor ingresa tu nombre" required>
+        </div>
+        <div class="field">
+          <label for="correo">Correo electrónico*</label>
+          <input id="correo" name="email" type="email" placeholder="ejemplo@company.com" required>
+        </div>
+        <button class="btn btn--primary" type="submit">Envíame el link de descarga</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="Assets/logo-blanco.svg" alt="ShakeWatch" width="300" height="58">
+        <p>ShakeWatch MX by SeismicAI Alerta sísmica temprana con red propia e inteligencia artificial.</p>
+      </div>
+
+      <nav class="footer__cols" aria-label="Pie de página">
+        <div>
+          <h3>Inicio</h3>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#cobertura">Cobertura</a>
+          <a href="#precio">Precio</a>
+          <a href="#faq">Preguntas frecuentes</a>
+        </div>
+        <div>
+          <h3>Empresa</h3>
+          <a href="#">SeismicAI</a>
+          <a href="#">Soluciones para empresas y gobierno</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div>
+          <h3>Recursos</h3>
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Aviso de privacidad</a>
+          <a href="#">Política de datos de ubicación</a>
+        </div>
+        <div class="footer__stores">
+          <a class="store store--white" href="#" aria-label="Descargar en App Store">
+            <img class="store__ico" src="Assets/apple.svg" alt="" aria-hidden="true">
+            <span><small>Descárgalo en</small><b>App Store</b></span>
+          </a>
+          <a class="store store--white" href="#" aria-label="Descargar en Google Play">
+            <img class="store__ico" src="Assets/google-play.svg" alt="" aria-hidden="true">
+            <span><small>Descárgalo en</small><b>Google Play</b></span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <hr class="footer__line">
+
+    <p class="footer__legal">ShakeWatch es un sistema de alerta temprana, no un sistema de predicción de sismos. Los tiempos de anticipación dependen de la distancia al epicentro y de las condiciones de red y del dispositivo; ningún sistema de alerta puede garantizar la notificación en todos los escenarios. ShakeWatch MX es un servicio privado de SeismicAI y no está afiliado ni respaldado por sistemas oficiales de alerta del gobierno mexicano.</p>
+
+    <div class="footer__bottom">
+      <p>© 2026 ShakeWatch | Todos los derechos reservados.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="17" height="17" fill="#F9F9FB"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.7v8z"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24" width="17" height="17" fill="#F9F9FB"><path d="M17.6 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.1 21H2l7.3-8.3L2.3 3h6.4l4.4 5.9zm-1.1 16.1h1.7L7.6 4.8H5.8z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
