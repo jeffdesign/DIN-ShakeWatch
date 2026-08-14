@@ -120,11 +120,13 @@
               <span class="mag mag--m" aria-hidden="true">M</span>
             </div>
 
-            <img
-              class="hero__phone"
-              src="Assets/iphone-hero.png"
-              alt="App ShakeWatch mostrando una alerta sísmica en el celular"
-            />
+            <div class="hero__phone-wrap">
+              <img
+                class="hero__phone"
+                src="Assets/iphone-hero.png"
+                alt="App ShakeWatch mostrando una alerta sísmica en el celular"
+              />
+            </div>
           </div>
 
           <div class="hero__foot">
@@ -162,7 +164,7 @@
       <!-- ══════════ FEATURES ══════════ -->
       <section class="features" id="que-hace">
         <div class="wrap">
-          <header class="sec-head reveal">
+          <header class="sec-head reveal reveal-text">
             <p class="sec-head__eyebrow">
               Cuando la emergencia ya llegó, ya es demasiado tarde.
             </p>
@@ -182,7 +184,7 @@
             <div class="feat__media">
               <img
                 class="feat__bg"
-                src="Assets/mapa-satelital.jpg"
+                src="Assets/mapa-satelital-1.jpg"
                 alt="Vista satelital del Pacífico mexicano"
                 loading="lazy"
               />
@@ -198,7 +200,7 @@
                 </p>
               </div>
             </div>
-            <div class="feat__text">
+            <div class="feat__text reveal-text">
               <h3>Cuenta regresiva al impacto</h3>
               <p class="feat__kicker">Sabes cuántos segundos tienes.</p>
               <p>
@@ -214,7 +216,7 @@
             <div class="feat__media feat__media--dark">
               <img
                 class="feat__bg"
-                src="Assets/mapa-satelital.jpg"
+                src="Assets/mapa-satelital-2.jpg"
                 alt="Mapa satelital con el epicentro estimado"
                 loading="lazy"
               />
@@ -232,7 +234,7 @@
                 <div class="scale"><i style="left: 15%"></i></div>
               </div>
             </div>
-            <div class="feat__text">
+            <div class="feat__text reveal-text">
               <h3>Intensidad estimada</h3>
               <p class="feat__kicker">Sabes qué tan fuerte se va a sentir.</p>
               <p>
@@ -263,7 +265,7 @@
               <span class="pin" style="left: 31%; top: 55%"></span>
               <span class="pin" style="left: 26%; top: 72%"></span>
             </div>
-            <div class="feat__text">
+            <div class="feat__text reveal-text">
               <h3>Alerta solo si la vas a sentir</h3>
               <p class="feat__kicker">
                 Cero alarmas por sismos que ni notarías.
@@ -282,7 +284,7 @@
             <div class="feat__media feat__media--green">
               <img
                 class="feat__bg"
-                src="Assets/mapa-satelital.jpg"
+                src="Assets/mapa-satelital-4.jpg"
                 alt="Mapa con el estado de cada familiar"
                 loading="lazy"
               />
@@ -320,7 +322,7 @@
                 >
               </div>
             </div>
-            <div class="feat__text">
+            <div class="feat__text reveal-text">
               <h3>Check-in familiar "Estoy a salvo"</h3>
               <p class="feat__kicker">
                 Lo primero que quieres saber cuando tiembla: ¿están bien?
@@ -338,7 +340,7 @@
       <!-- ══════════ PROMESA / PRIVACIDAD ══════════ -->
       <section class="promise">
         <div class="wrap">
-          <header class="sec-head reveal">
+          <header class="sec-head reveal reveal-text">
             <p class="sec-head__eyebrow">No estás comprando una app.</p>
             <h2 class="sec-head__title">
               Estás comprando la certeza de que, pase lo que pase, tu familia
@@ -525,7 +527,7 @@
       <!-- ══════════ CÓMO FUNCIONA ══════════ -->
       <section class="steps" id="como-funciona">
         <div class="wrap">
-          <header class="sec-head reveal">
+          <header class="sec-head reveal reveal-text">
             <p class="sec-head__eyebrow">De la primera onda sísmica</p>
             <h2 class="sec-head__title">a tu pantalla, en 3 pasos.</h2>
           </header>
@@ -542,7 +544,7 @@
                 loading="lazy"
               />
             </div>
-            <div class="step__text">
+            <div class="step__text reveal-text">
               <p class="step__n">Paso 1</p>
               <h3>Detectamos</h3>
               <p>
@@ -564,7 +566,7 @@
                 loading="lazy"
               />
             </div>
-            <div class="step__text">
+            <div class="step__text reveal-text">
               <p class="step__n">Paso 2</p>
               <h3>Calculamos para ti</h3>
               <p>
@@ -613,7 +615,7 @@
                 loading="lazy"
               />
             </div>
-            <div class="step__text">
+            <div class="step__text reveal-text">
               <p class="step__n">Paso 3</p>
               <h3>Te alertamos a tiempo</h3>
               <p>
@@ -630,7 +632,7 @@
       <!-- ══════════ COMPARATIVA ══════════ -->
       <section class="compare">
         <div class="wrap">
-          <header class="sec-head reveal">
+          <header class="sec-head reveal reveal-text">
             <p class="sec-head__eyebrow">
               Ya existe la alerta gratuita del gobierno.
             </p>
@@ -717,7 +719,7 @@
       <!-- ══════════ TESTIMONIOS ══════════ -->
       <section class="voices">
         <div class="wrap">
-          <header class="sec-head reveal">
+          <header class="sec-head reveal reveal-text">
             <p class="sec-head__eyebrow">
               Lo que se siente dejar de preocuparte
             </p>
@@ -728,79 +730,175 @@
         </div>
 
         <div class="voices__rail reveal">
-          <article class="quote">
-            <span class="quote__mark" aria-hidden="true">“</span>
-            <div class="quote__head">
-              <img src="Assets/avatar-testimonio.jpg" alt="" loading="lazy" />
-              <div><b>Jane Doe</b><i>Guadalajara</i></div>
-              <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Et velit semper purus
-              commodo aenean id nec porta velit. Dui eget tincidunt sagittis
-              porta gravida at felis suscipit.
-            </p>
-          </article>
+          <div class="voices__track">
+            <article class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <div class="quote__head">
+                <img src="Assets/avatar-testimonio.jpg" alt="" loading="lazy" />
+                <div><b>Jane Doe</b><i>Guadalajara</i></div>
+                <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Et velit semper purus
+                commodo aenean id nec porta velit. Dui eget tincidunt sagittis
+                porta gravida at felis suscipit.
+              </p>
+            </article>
 
-          <article class="voices__video">
-            <img
-              src="Assets/testimonio-video.jpg"
-              alt="Testimonio en video de una usuaria de ShakeWatch"
-              loading="lazy"
-            />
-            <button
-              class="voices__play"
-              type="button"
-              aria-label="Reproducir testimonio"
+            <article
+              class="voices__video"
+              tabindex="0"
+              role="button"
+              aria-label="Reproducir testimonio en video de una usuaria de ShakeWatch"
+              data-video="Assets/testimonio-1.mp4"
+              data-poster="Assets/testimonio-video.jpg"
             >
-              <svg
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="#0C0C0D"
+              <img
+                src="Assets/testimonio-video.jpg"
+                alt="Testimonio en video de una usuaria de ShakeWatch"
+                loading="lazy"
+              />
+              <button
+                class="voices__play"
+                type="button"
+                tabindex="-1"
                 aria-hidden="true"
               >
-                <path d="M8 5l11 7-11 7z" />
-              </svg>
-            </button>
-          </article>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="#0C0C0D"
+                  aria-hidden="true"
+                >
+                  <path d="M8 5l11 7-11 7z" />
+                </svg>
+              </button>
+            </article>
 
-          <article class="quote">
-            <span class="quote__mark" aria-hidden="true">“</span>
-            <div class="quote__head">
-              <img src="Assets/avatar-testimonio.jpg" alt="" loading="lazy" />
-              <div><b>Jane Doe</b><i>Guadalajara</i></div>
-              <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Et velit semper purus
-              commodo aenean id nec porta velit. Dui eget tincidunt sagittis
-              porta gravida at felis suscipit.
-            </p>
-          </article>
+            <article class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <div class="quote__head">
+                <img src="Assets/avatar-testimonio.jpg" alt="" loading="lazy" />
+                <div><b>Jane Doe</b><i>Guadalajara</i></div>
+                <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Et velit semper purus
+                commodo aenean id nec porta velit. Dui eget tincidunt sagittis
+                porta gravida at felis suscipit.
+              </p>
+            </article>
 
-          <article class="voices__video">
-            <img
-              src="Assets/testimonio-video.jpg"
-              alt="Testimonio en video de un usuario de ShakeWatch"
-              loading="lazy"
-            />
-            <button
-              class="voices__play"
-              type="button"
-              aria-label="Reproducir testimonio"
+            <article
+              class="voices__video"
+              tabindex="0"
+              role="button"
+              aria-label="Reproducir testimonio en video de un usuario de ShakeWatch"
+              data-video="Assets/testimonio-2.mp4"
+              data-poster="Assets/testimonio-video.jpg"
             >
-              <svg
-                viewBox="0 0 24 24"
-                width="18"
-                height="18"
-                fill="#0C0C0D"
+              <img
+                src="Assets/testimonio-video.jpg"
+                alt="Testimonio en video de un usuario de ShakeWatch"
+                loading="lazy"
+              />
+              <button
+                class="voices__play"
+                type="button"
+                tabindex="-1"
                 aria-hidden="true"
               >
-                <path d="M8 5l11 7-11 7z" />
-              </svg>
-            </button>
-          </article>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="#0C0C0D"
+                  aria-hidden="true"
+                >
+                  <path d="M8 5l11 7-11 7z" />
+                </svg>
+              </button>
+            </article>
+
+            <div class="voices__dup" aria-hidden="true">
+              <article class="quote">
+                <span class="quote__mark" aria-hidden="true">“</span>
+                <div class="quote__head">
+                  <img
+                    src="Assets/avatar-testimonio.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div><b>Jane Doe</b><i>Guadalajara</i></div>
+                  <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Et velit semper purus
+                  commodo aenean id nec porta velit. Dui eget tincidunt sagittis
+                  porta gravida at felis suscipit.
+                </p>
+              </article>
+
+              <article class="voices__video">
+                <img src="Assets/testimonio-video.jpg" alt="" loading="lazy" />
+                <button
+                  class="voices__play"
+                  type="button"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="#0C0C0D"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5l11 7-11 7z" />
+                  </svg>
+                </button>
+              </article>
+
+              <article class="quote">
+                <span class="quote__mark" aria-hidden="true">“</span>
+                <div class="quote__head">
+                  <img
+                    src="Assets/avatar-testimonio.jpg"
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div><b>Jane Doe</b><i>Guadalajara</i></div>
+                  <span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Et velit semper purus
+                  commodo aenean id nec porta velit. Dui eget tincidunt sagittis
+                  porta gravida at felis suscipit.
+                </p>
+              </article>
+
+              <article class="voices__video">
+                <img src="Assets/testimonio-video.jpg" alt="" loading="lazy" />
+                <button
+                  class="voices__play"
+                  type="button"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="#0C0C0D"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5l11 7-11 7z" />
+                  </svg>
+                </button>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -814,7 +912,7 @@
           loading="lazy"
         />
         <div class="wrap pricing__grid">
-          <div class="pricing__left reveal">
+          <div class="pricing__left reveal reveal-text">
             <h2>Proteger a toda tu familia cuesta menos de $1 MXN al día.</h2>
             <p>
               Un seguro te compensa después. Esto actúa antes por una fracción
@@ -1065,7 +1163,7 @@
             </div>
           </div>
 
-          <div class="final__text reveal">
+          <div class="final__text reveal reveal-text">
             <p class="final__kicker">El próximo sismo no va a avisar.</p>
             <h2>Tu familia merece que tú sí lo sepas.</h2>
             <p class="final__body">
@@ -1116,7 +1214,7 @@
         <div class="footer__top">
           <div class="footer__brand">
             <img
-              src="Assets/logo-blanco.svg"
+              src="Assets/logo.svg"
               alt="ShakeWatch"
               width="300"
               height="58"
@@ -1194,13 +1292,13 @@
           <p>© 2026 ShakeWatch | Todos los derechos reservados.</p>
           <div class="footer__social">
             <a href="#" aria-label="Facebook"
-              ><svg viewBox="0 0 24 24" width="17" height="17" fill="#F9F9FB">
+              ><svg viewBox="0 0 24 24" width="17" height="17" fill="#0C0C0D">
                 <path
                   d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5H16.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.7v8z"
                 /></svg
             ></a>
             <a href="#" aria-label="X"
-              ><svg viewBox="0 0 24 24" width="17" height="17" fill="#F9F9FB">
+              ><svg viewBox="0 0 24 24" width="17" height="17" fill="#0C0C0D">
                 <path
                   d="M17.6 3h3.1l-6.8 7.8L22 21h-6.3l-4.9-6.4L5.1 21H2l7.3-8.3L2.3 3h6.4l4.4 5.9zm-1.1 16.1h1.7L7.6 4.8H5.8z"
                 /></svg
@@ -1209,6 +1307,42 @@
         </div>
       </div>
     </footer>
+
+    <!-- ══════════ MODAL DE VIDEO (TESTIMONIOS) ══════════ -->
+    <div class="video-modal" id="video-modal" hidden>
+      <div class="video-modal__backdrop" data-close></div>
+      <div
+        class="video-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Testimonio en video"
+      >
+        <button
+          class="video-modal__close"
+          type="button"
+          data-close
+          aria-label="Cerrar video"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          >
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <video
+          class="video-modal__video"
+          id="video-modal-player"
+          controls
+          playsinline
+        ></video>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
