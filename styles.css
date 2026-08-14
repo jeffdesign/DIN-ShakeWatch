@@ -380,7 +380,7 @@ button {
   filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.28));
 
   animation: hero-phone-fly;
-  animation-duration: 4s;
+  animation-duration: s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -1054,7 +1054,7 @@ button {
 }
 .step__avatar {
   position: absolute;
-  width: clamp(38px, 11vw, 50px);
+  width: 150px !important;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
