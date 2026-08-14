@@ -2002,10 +2002,12 @@ main[id] {
 
 /* Features: entran desde el lado del que aparece su media */
 .js .feat.reveal {
-  transform: translateX(-28px);
+  /* Debe quedar por debajo de --gutter (20px en mobile) para que el
+     estado oculto (pre-reveal) no empuje overflow horizontal. */
+  transform: translateX(-16px);
 }
 .js .feat--flip.reveal {
-  transform: translateX(28px);
+  transform: translateX(16px);
 }
 
 /* Stagger de items dentro de grupos repetidos */
